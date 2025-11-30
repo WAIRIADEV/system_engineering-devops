@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script displays all running processes in a hierarchical format
 echo "0"
-echo "0 chmod ./1-list_your_processes &&"
+echo "0"
