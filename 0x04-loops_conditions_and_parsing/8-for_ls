@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script lists files and displays only the part after the first dash
+for file in *
+do
+    # Skip if it's a directory or hidden file
+    if [ -f "$file" ]; then
+        echo "$file" | cut -d'-' -f2-
+    fi
+done
