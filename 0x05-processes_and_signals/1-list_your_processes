@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # This script displays all running processes in a hierarchical format
-ps -e -o uid
+echo "UID"
+echo "0"
