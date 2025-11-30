@@ -5,6 +5,6 @@ trap 'echo "I am invincible!!!"' TERM
 while true
 do
     echo "To infinity and beyond"
-    # Very short sleep to be responsive
-    sleep 0.1
+    # Use a method that doesn't block signals
+    read -t 2 || true
 done
