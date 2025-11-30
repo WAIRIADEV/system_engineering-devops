@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # This script displays all running processes in a hierarchical format
-ps -eo uid,pid,cmd | grep -E "This script displays all running processes in a hierarchical format"
+ps -eo uid:1,cmd --no-headers | head -20
