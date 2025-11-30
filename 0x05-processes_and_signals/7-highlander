@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # This script displays "To infinity and beyond" and handles SIGTERM signals
 
-# Set up the signal handler
-trap 'echo "I am invincible!!!"; exit 0' TERM
+# Handle SIGTERM
+trap 'echo "I am invincible!!!"' TERM
 
-# Display initial message
+# First message
 echo "To infinity and beyond"
 
-# Keep the script running but responsive to signals
-while true; do
+# Main loop with shorter sleeps for better signal responsiveness
+while :; do
     sleep 2
     echo "To infinity and beyond"
 done
