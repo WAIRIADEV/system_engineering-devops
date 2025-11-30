@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 # This script displays "To infinity and beyond" and handles SIGTERM signals
-trap "echo I am invincible!!!" TERM
-while :; do echo "To infinity and beyond"; sleep 2; done
+
+# Handle SIGTERM and also exit gracefully for testing
+trap 'echo "I am invincible!!!"; exit 0' TERM INT
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
